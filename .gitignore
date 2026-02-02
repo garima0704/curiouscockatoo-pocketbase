@@ -1,0 +1,16 @@
+# PocketBase runtime data
+pb_data/storage
+pb_data/backups
+pb_data/*.db
+pb_data/*.bak
+pb_data/*_backup
+pb_data/*_corrupt
+pb_data/_wal_backup
+
+# SQLite junk
+*.db
+*.db-wal
+*.db-shm
+
+# Logs
+*.log
