@@ -1,6 +1,6 @@
-FROM alpine:latest
+FROM alpine:3.19
 
-RUN apk add --no-cache ca-certificates
+RUN apk update && apk add --no-cache ca-certificates
 
 WORKDIR /pb
 
