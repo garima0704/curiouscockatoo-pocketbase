@@ -1,14 +1,10 @@
-FROM alpine:latest
-
-RUN apk add --no-cache ca-certificates
+FROM alpine:3.18
 
 WORKDIR /pb
 
 COPY pocketbase /pb/pocketbase
 COPY pb_migrations /pb/pb_migrations
 COPY pb_public /pb/pb_public
-COPY pb_data /pb/pb_data
-COPY robots.txt /pb/robots.txt
 
 RUN chmod +x /pb/pocketbase
 
